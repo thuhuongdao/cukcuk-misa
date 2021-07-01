@@ -1,27 +1,38 @@
 .navbar{
     float: left;
     width: 220px;
-    border-right: #E5E5E5;
+    border-right: 1px solid #E5E5E5;
     height: calc(100vh - 49px);
-
+    
 
 }
 .navbar div{
     width: 100%;
     height: 44px;
-    background-color: #bbbbbb;
+    background-color: #ffffff;
+    color: #000000;
     font-family: GoogleSans-Regular;
     font-size: 13px;
+    display: flex;
 }
 .navbar img{
     width: 20px;
     height: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 16px;
+    margin-right: 12px;
 }
 
 
 .navbar div:focus{
     background-color: #019160;
+    color: #ffffff;
+    font-family: GoogleSans-Medium;
 }
-.navbar{
-
+.navbar div:hover{
+    background-color: #e5e5e5;
+    color: #000000;
+    
 }

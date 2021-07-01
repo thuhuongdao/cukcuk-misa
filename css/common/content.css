@@ -4,3 +4,60 @@
     height: calc(100vh - 49px);
 
 }
+.first-content{
+        /* height: fit-content; */
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+}
+.content .employee-lable{
+    /* float: left; */
+    font-family: GoogleSans-Bold;
+    font-size: 24px;
+    margin-left: 16px;
+}
+.content .add-employee{
+    /* float: right; */
+    background-color: #01B075;
+    border-radius: 5px;
+    height: 36px;
+    font-size: 13px;
+    color:#ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border: none;
+    display: flex;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+.content .add-employee img{
+    width: 16px;
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 8px;
+}
+.content .add-employee p{
+    
+margin: auto;
+}
+
+.content .filter-bar input{
+    background-image: url('/content/icon/search.png');
+    background-repeat: no-repeat;
+    background-position: 16px;
+    padding-left: 16px;
+    height: 40px;
+
+
+    
+    
+
+}
+.content .filter-bar input::placeholder{
+    
+
+}
+
