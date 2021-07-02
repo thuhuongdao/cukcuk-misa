@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/common/table.css">
     <link rel="stylesheet" href="/css/common/container.css">
     <link rel="stylesheet" href="/css/common/main.css">
     <link rel="stylesheet" href="/css/common/navbar.css">
@@ -71,21 +72,139 @@
             </button>
         </div>
         <div class="filter-bar">
-            <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại">
+            <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại" onkeydown="clickInput()">
             <select>
                 <option value="all">Tất cả phòng ban</option>
                 <option value="all">Tất cả phòng ban</option>
                 <option value="all">Tất cả phòng ban</option>
             </select>
             <select>
-                <option value="all">Tất cả vị trí</option>
-                <option value="all">Tất cả vị trí</option>
+                <option value="all">Tất cả vi tri</option>
+                <option value="all">Tất cả 3 trí</option>
                 <option value="all">Tất cả vị trí</option>
             </select>
-            <button>
+            <button class="icon-button">
                 <img src="/content/icon/refresh.png">
             </button>
         </div>
+        <div class="grid">
+        <table >
+            <tr>
+                <th>Mã nhân viên</th>
+                <th>Họ và tên</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Điện thoại</th>
+                <th>Email</th>
+                <th>Chức vụ</th>
+                <th>Phòng ban</th>
+                <th>Mức lương cơ bản</th>
+                <th>Tình trạng công việc</th>
+            </tr>
+            <tr>
+                <td>NV-567896</td>
+                <td>Đào Thu Hương</td>
+                <td>Nữ</td>
+                <td>26/11/2000</td>
+                <td>0399429273</td>
+                <td>daothuhuongbg123@gmail.com</td>
+                <td>Giám đốc</td>
+                <td>Phòng nhân sự</td>
+                <td>17.739.391</td>
+                <td>Đang thử việc</td>
+           
+            </tr>
+            <tr>
+                <td>NV-567896</td>
+                <td>Đào Thu Hương</td>
+                <td>Nữ</td>
+                <td>26/11/2000</td>
+                <td>0399429273</td>
+                <td>daothuhuongbg123@gmail.com</td>
+                <td>Giám đốc</td>
+                <td>Phòng nhân sự</td>
+                <td>17.739.391</td>
+                <td>Đang thử việc</td>
+           
+            </tr>
+            <tr>
+                <td>NV-567896</td>
+                <td>Đào Thu Hương</td>
+                <td>Nữ</td>
+                <td>26/11/2000</td>
+                <td>0399429273</td>
+                <td>daothuhuongbg123@gmail.com</td>
+                <td>Giám đốc</td>
+                <td>Phòng nhân sự</td>
+                <td>17.739.391</td>
+                <td>Đang thử việc</td>
+           
+            </tr>
+            <tr>
+                <td>NV-567896</td>
+                <td>Đào Thu Hương</td>
+                <td>Nữ</td>
+                <td>26/11/2000</td>
+                <td>0399429273</td>
+                <td>daothuhuongbg123@gmail.com</td>
+                <td>Giám đốc</td>
+                <td>Phòng nhân sự</td>
+                <td>17.739.391</td>
+                <td>Đang thử việc</td>
+           
+            </tr>
+            <tr>
+                <td>NV-567896</td>
+                <td>Đào Thu Hương</td>
+                <td>Nữ</td>
+                <td>26/11/2000</td>
+                <td>0399429273</td>
+                <td>daothuhuongbg123@gmail.com</td>
+                <td>Giám đốc</td>
+                <td>Phòng nhân sự</td>
+                <td>17.739.391</td>
+                <td>Đang thử việc</td>
+           
+            </tr>
+            
+            
+        </table>
+        </div>
+        <div class="paging-bar">
+            <p>Hiển thị 1-10/1000 nhân viên</p>
+            <div class="paging">
+                <button class="btn-angle"><i class="fa fa-angle-double-left"></i></button>
+                <button class="btn-angle"><i class="fa fa-angle-left"></i></button>
+                <button class="btn-number"  name="page">1</button>
+                <button class="btn-number" name="page">2</button>
+                <button class="btn-number" name="page">3</button>
+                <button class="btn-number" name="page">4</button>
+                <button class="btn-angle"><i class="fa fa-angle-right"></i></button>
+                <button class="btn-angle"><i class="fa fa-angle-double-right"></i></button>
+            </div>
+            <p>10 nhân viên/trang</p>
+
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="add-employee-modal-id" class="add-employee-modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <p>Thông tin sinh viên</p>
+        
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  
+
+
     </div>
     
     
