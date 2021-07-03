@@ -1,24 +1,102 @@
-
+.grid {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 24px;
+  }
 table{
     width: 100%;
+    margin-bottom: 2px;
     
-    margin-top: 24px;
+   
 
-    text-align: left;
+    
     border-collapse:  collapse;
+    height: 675px;
+    overflow-y: auto;
+    display: block;
+    
+    
+
+
 
     
 
 }
-tr:nth-child(even)
+thead,tbody{
+    /* display: block; */
+}
+thead{
+    text-align: left;
+}
+th{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color: #ffffff;
+    border-bottom: 1px solid #bbbbbb;
+}
+tbody{
+    /* height: 650px;
+    overflow-y: auto;*/
+} 
+tr:nth-child(odd)
 {
     background-color: #e5e5e5;
 }
 th,td{
+   
     padding: 10px;
-    border-bottom: 1px solid #bbbbbb; 
-    
-    
-
-
+    border-bottom: 1px solid #bbbbbb;
+    width: 10%;
+   
 }
+
+
+.paging-bar {
+    height: 56px;
+    /* position: absolute;
+    bottom: 0px; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+  }
+  .paging-bar p{
+      /* margin: auto 16px; */
+  }
+  .paging-bar button{
+      width: 40px;
+      height: 40px;
+      outline: none;
+      border: none;
+      background-color: #ffffff;
+      
+      margin-left: 5px;
+      
+  }
+  .paging-bar button i{
+      font-size: 20px;
+  }
+  .paging-bar .btn-angle{
+      border-radius: 5px;
+  }
+  .paging-bar .btn-number{
+      border: 1px solid #bbbbbb;
+      border-radius: 50%;
+      font-size: 13px;
+      
+  }
+  
+  
+  .paging-bar button:hover{
+      background-color: #E9EBEE;
+  }
+  .paging-bar .btn-number:focus{
+      background-color: #019160;
+      color: #ffffff;
+  }
+  /* .paging-bar button:active{
+      background-color: #019160;
+      color: #000000;
+  } */
