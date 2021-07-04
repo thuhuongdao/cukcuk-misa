@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/base/button.css">
     <link rel="stylesheet" href="/css/common/table.css">
     <link rel="stylesheet" href="/css/common/container.css">
     <link rel="stylesheet" href="/css/common/main.css">
@@ -14,6 +15,10 @@
     <link rel="stylesheet" href="/css/common/header.css">
     <link rel="stylesheet" href="/css/common/content.css">
     <link rel="stylesheet" href="/css/private/employee.css">
+    <link rel="stylesheet" href="/css/common/modal.css">
+
+    <script src="/js/modal.js"></script>
+    <script src="/js/navbar.js"></script>
     
 <body>
     <div class="header">
@@ -39,24 +44,24 @@
    
 
  
-     <div class="navbar">
-        <div "> 
-            <img src="/content/icon/dashboard.png">
+    <div class="navbar">
+        <div class="navbar-item active"> 
+            <img src="/content/icon/dashboard.png" >
             <p>Tổng quan</p>
         </div>
-        <div> 
+        <div class="navbar-item" > 
             <img src="/content/icon/report.png">
             <p>Báo cáo</p>
         </div>
-        <div> 
+        <div class="navbar-item"> 
             <img src="/content/icon/dashboard.png">
             <p>Mua hàng</p>
         </div>
-        <div> 
+        <div class="navbar-item"> 
             <img src="/content/icon/dic-employee.png">
             <p>Danh mục nhân viên</p>
         </div>
-        <div> 
+        <div class="navbar-item"> 
             <img src="/content/icon/setting.png">
             <p>Thiết lập hệ thống</p>
         </div>
@@ -66,7 +71,7 @@
     <div class="content">
         <div class="first-content">
             <p class="employee-lable">Danh sách nhân viên</p>
-            <button class="add-employee">
+            <button class="add-employee" onclick="addEmployee()">
                 <img src="/content/icon/add.png">
                 <p>Thêm nhân viên</p>
             </button>
@@ -75,20 +80,23 @@
             <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại" onkeydown="clickInput()">
             <select>
                 <option value="all">Tất cả phòng ban</option>
-                <option value="all">Tất cả phòng ban</option>
-                <option value="all">Tất cả phòng ban</option>
+                <option value="all">Phòng Nhân sự</option>
+                <option value="all">Phòng Đào tạo</option>
+                <option value="all">Phòng Công nghệ</option>
+                <option value="all">Phòng marketing</option>
             </select>
             <select>
-                <option value="all">Tất cả vi tri</option>
-                <option value="all">Tất cả 3 trí</option>
                 <option value="all">Tất cả vị trí</option>
+                <option value="all">Giám đốc</option>
+                <option value="all">Thu ngân</option>
+                <option value="all">Nhân viên marketing</option>
             </select>
             <button class="icon-button">
                 <img src="/content/icon/refresh.png">
             </button>
         </div>
         <div class="grid">
-        <table >
+        <table class="employee-list" >
             <thead>
             <tr>
                 <th class="employee-id">Mã nhân viên</th>
@@ -118,16 +126,16 @@
            
             </tr>
             <tr>
-                <td>NV-5678aaaaaaaaaa96</td>
+                <td>NV-567896</td>
                 <td>Đào Thu Hương</td>
                 <td>Nữ</td>
                 <td>26/11/2000</td>
                 <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.caaaaaaaaaaaaaaaaaaam</td>
+                <td>daothuhuongbg123@gmail.</td>
                 <td>Giám đốc</td>
                 <td>Phòng nhân sự</td>
                 <td>17.739.391</td>
-                <td>Đang thử viaaaaaaaaaaaaaaaaaaaaaaaaaaệc</td>
+                <td>Đang thử vic</td>
            
             </tr>
             <tr>
@@ -136,7 +144,7 @@
                 <td>Nữ</td>
                 <td>26/11/2000</td>
                 <td>0399429273</td>
-                <td>daothuhuongbg123@gmaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaal.com</td>
+                <td>daothuhuongbg123@gmail.com</td>
                 <td>Giám đốc</td>
                 <td>Phòng nhân sự</td>
                 <td>17.739.391</td>
@@ -375,6 +383,160 @@
         
     </div>
     <!-- The Modal -->
+    <div id="add-employee-modal-id" class="add-employee-modal">
+        <!--Modal content-->
+        <div class="modal-content">
+            <div class="modal-top">
+            <div class="modal-header">
+                <p>Thông tin nhân viên</p>
+                <img id="x" src="/content/icon/x.svg" onclick="closePopUp()">
+
+            </div>
+            <form id="add-employee-form">
+            <div class="modal-body">
+                
+                <div class="left-body">
+                    <img src="/content/img/default-avatar.jpg">
+                    <p>(Vui lòng chọn ảnh có định</p>
+                    <p> dạng </p>
+                    <p>.jpg .jpeg, .png, .gif )</p>
+                </div>
+                <div class="right-body">
+                    <p>A. Thông tin chung</p>
+                    <table class="information">
+                        <tr>
+                            <td><p>Mã nhân viên (<span class="star">*</span>)</p></td>
+                            <td><p>Họ và tên (<span class="star">*</span>)</p></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+
+                            
+                        </tr>
+                        <tr>
+                            <td><p>Ngày sinh</p></td>
+                            <td><p>Giới tính</p></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="date"></td>
+                            
+                            <td>
+                                <select name="gender" >
+                                    <option value="male">Nam</option>
+                                    <option value="female">Nữ</option>
+                                    <option value="dif">Khác</option>
+
+                                 </select>
+                            </td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td><p>Số CMTND/ Căn cước (<span class="star">*</span>)</p></td>
+                            <td><p>Ngày cấp</p></td>
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="text"></td>
+                            <td><input type="date"></td>
+
+                            
+                        </tr>
+                        <tr>
+                            <td><p>Nơi cấp</td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td><input type="text" value="Tỉnh Bắc Giang"/></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <td><p>Email (<span class="star">*</span>)</p></td>
+                            <td><p>Số điện thoại (<span class="star">*</span>)</p></td>
+                            
+                            
+                        </tr>
+                        <tr>
+                           <td> <input type="number"></td>
+                           <td><input type="number"></td>
+
+                        </tr>
+                    </table>
+                    <p>B.Thông tin công việc</p>
+                    <table class="information">
+                        <tr>
+                            <td><p>Vị trí</p></td>
+                            <td><p>Phòng ban</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="position">
+                                    <option value="manager">Giám đốc</option>
+                                    
+                                </select>
+                            </td>
+                            <td>
+                                <select name="department">
+                                    <option value="">Phòng nhân sự</option>
+                                    
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p>Mã số thuế cá nhân</p></td>
+                            <td><p>Mức lương cơ bản</p></td>
+
+                        </tr>
+                        <tr>
+                            <td><input type="number"></td>
+                            <td><input type="number"></td>
+
+                        </tr>
+                        <tr>
+                            <td><p>Ngày gia nhập công ty</p></td>
+                            <td><p>tình trạng công việc</p></td>
+
+                        </tr>
+                        <tr>
+                            <td><input type="date"></td>
+                            <td>
+                                <select name="status">
+                                    <option value="">Đang làm việc</option>
+                                </select>
+                            </td>
+                        </tr>
+                        
+
+                    </table>
+                
+                    
+
+                </div>
+          
+                    
+               
+
+            </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+                <div class="right-footer">
+                <button class="m-btn-cancel" onclick="closePopUp()">Huỷ</button>
+                <button class="m-btn-save second-button" type="submit" form="add-employee-form" value="Submit">
+                    <i class="fa fa-save"></i>
+                    <div>Lưu</div>
+                </button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
     
     
 

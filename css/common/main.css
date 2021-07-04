@@ -27,3 +27,7 @@ body{
     font-family: GoogleSans-Thin;
     src: url(/content/font/GoogleSans-Thin.otf)
 }
+@font-face{
+    font-family: GoogleSans-Medium;
+    src: url(/content/font/GoogleSans-Medium.otf)
+}

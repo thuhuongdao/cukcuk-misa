@@ -1,14 +1,15 @@
+
 .grid {
     padding-left: 16px;
     padding-right: 16px;
     margin-top: 24px;
   }
-table{
+  .employee-list{
     width: 100%;
     margin-bottom: 2px;
     
    
-
+  
     
     border-collapse:  collapse;
     height: 675px;
@@ -16,43 +17,43 @@ table{
     display: block;
     
     
-
-
-
+  
+  
+  
     
-
-}
-thead,tbody{
+  
+  }
+  .employee-list thead,tbody{
     /* display: block; */
-}
-thead{
+  }
+  .employee-list thead{
     text-align: left;
-}
-th{
+  }
+  .employee-list th{
     position: sticky;
     top:0;
     z-index: 1;
     background-color: #ffffff;
     border-bottom: 1px solid #bbbbbb;
-}
-tbody{
+  }
+  .employee-list tbody{
     /* height: 650px;
     overflow-y: auto;*/
-} 
-tr:nth-child(odd)
-{
+  } 
+  .employee-list tr:nth-child(odd)
+  {
     background-color: #e5e5e5;
-}
-th,td{
+  }
+  .employee-list th,.employee-list td{
    
     padding: 10px;
     border-bottom: 1px solid #bbbbbb;
     width: 10%;
    
-}
-
-
-.paging-bar {
+  }
+  
+  
+  .paging-bar {
     height: 56px;
     /* position: absolute;
     bottom: 0px; */
@@ -100,3 +101,4 @@ th,td{
       background-color: #019160;
       color: #000000;
   } */
+  

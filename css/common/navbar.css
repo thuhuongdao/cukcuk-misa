@@ -6,7 +6,7 @@
     
 
 }
-.navbar div{
+.navbar .navbar-item{
     width: 100%;
     height: 44px;
     background-color: #ffffff;
@@ -26,13 +26,15 @@
 }
 
 
-.navbar div:focus{
-    background-color: #019160;
-    color: #ffffff;
-    font-family: GoogleSans-Medium;
-}
+
 .navbar div:hover{
     background-color: #e5e5e5;
     color: #000000;
     
+}
+
+.navbar .active{
+    background-color: #019160;
+    color: #ffffff;
+    font-family: GoogleSans-Medium;
 }

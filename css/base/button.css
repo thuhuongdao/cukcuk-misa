@@ -1,0 +1,23 @@
+.second-button{
+    border:none;
+      
+    background-color:#019160;
+          
+    border-radius: 4px;
+          
+    height: 40px;
+          
+    padding-left: 16px;
+          
+    padding-right: 16px;
+          
+    text-align: left;
+          
+    display: flex;
+          
+    align-items: center;
+          
+    color: #ffffff;
+          
+    margin-left: 16px;
+}
