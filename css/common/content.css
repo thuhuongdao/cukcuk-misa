@@ -15,54 +15,27 @@
   margin-left: 16px;
 }
 .content .add-employee {
-  background-color: rgb(1, 176, 117);
-  border-radius: 5px;
-  height: 36px;
-  font-size: 13px;
-  color: rgb(255, 255, 255);
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  border: none;
-  display: flex;
+  
   margin-right: 16px;
   margin-top: 16px;
 }
 .content .add-employee img {
   width: 16px;
   height: 16px;
-  margin-top: auto;
-  margin-bottom: auto;
+  
   margin-right: 8px;
 }
-.content .add-employee p {
-  margin: auto;
+.content .filter-bar{
+  display: flex;
+  
 }
-.content .filter-bar input {
-  background-image: url("/content/icon/search.png");
-  background-repeat: no-repeat;
-  background-position: 16px center;
-  padding-left: 40px;
-  height: 38px;
-  outline: none;
-  border: 1px solid rgb(187, 187, 187);
-  border-radius: 4px;
+.content .filter-bar .icon-input{
   margin-left: 16px;
   width: 300px;
-  font-size: 13px;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
-.content .filter-bar input::placeholder {
-  font-size: 12px;
-  color: rgb(187, 187, 187);
-}
-.content .filter-bar input:focus {
-  border-color: rgb(1, 145, 96);
-}
-.content .filter-bar input:focus::placeholder {
-  color: transparent;
-}
+
+
+
 .content .filter-bar select {
   height: 40px;
   padding-left: 16px;
@@ -72,12 +45,8 @@
   border-radius: 4px;
   margin-left: 16px;
 }
-.icon-button {
-  outline: none;
-  border: 1px solid rgb(187, 187, 187);
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255);
-  height: 40px;
+.refresh-button {
+  
   width: 40px;
   position: absolute;
   right: 16px;
@@ -89,25 +58,16 @@
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 24px;
+  /* height: 100%; */
+  /* width: 100%; */
 }
 .employee-list{
   width: 100%;
   margin-bottom: 2px;
-  
- 
-
-  
   border-collapse:  collapse;
-  height: 675px;
+  /* height: calc(100% - 198px); */
   overflow-y: auto;
   display: block;
-  
-  
-
-
-
-  
-
 }
 .employee-list thead,tbody{
   /* display: block; */
@@ -145,9 +105,12 @@
   bottom: 0px; */
   display: flex;
   justify-content: space-between;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
   align-items: center;
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin-top: auto;
 }
 .paging-bar p{
     /* margin: auto 16px; */

@@ -27,14 +27,16 @@
 
 
 
+
 .navbar div:hover{
     background-color: #e5e5e5;
     color: #000000;
     
+    
+}
+.navbar .active{
+    background-color: #019160 !important;
+    color: #ffffff !important;
+    font-family: GoogleSans-Medium !important;
 }
 
-.navbar .active{
-    background-color: #019160;
-    color: #ffffff;
-    font-family: GoogleSans-Medium;
-}

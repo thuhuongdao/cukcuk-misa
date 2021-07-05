@@ -55,7 +55,7 @@
     height: 24px;
     /* border-bottom: 1px solid #E5E5E5; */
 }
-.header .fa-bell{
+.header .icon-header{
     margin-right: 16px;
     width: 24px;
     height: 24px;
@@ -74,10 +74,6 @@
     font-size: 13px;
     
 }
-.header .option{
-    margin-right: 16px;
-    width: 24px;
-    height: 24px;
-}
+
 
 

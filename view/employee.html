@@ -8,8 +8,9 @@
     <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/base/button.css">
+    <link rel="stylesheet" href="/css/base/input.css">
     <link rel="stylesheet" href="/css/common/table.css">
-    <link rel="stylesheet" href="/css/common/container.css">
+
     <link rel="stylesheet" href="/css/common/main.css">
     <link rel="stylesheet" href="/css/common/navbar.css">
     <link rel="stylesheet" href="/css/common/header.css">
@@ -31,10 +32,10 @@
             <img class="dropdown-img" src="/content/img/dropdown.png">
         </div>
         <div class="right-side">
-            <!-- <i class="fas fa-bell"></i> -->
+            <img class="icon-header" src="/content/font/fontawesome-5.15.1//svgs/regular/bell.svg">
             <img class="avatar" src="/content/icon/avatar-default.png">
             <p class="username" >Đào Thu Hương</p>
-            <img class="option" src="/content/icon/option.png">
+            <img class="icon-header" src="/content/icon/option.png">
 
             
         </div>
@@ -71,13 +72,19 @@
     <div class="content">
         <div class="first-content">
             <p class="employee-lable">Danh sách nhân viên</p>
-            <button class="add-employee" onclick="addEmployee()">
+            <button class="add-employee icon-button" onclick="addEmployee()">
                 <img src="/content/icon/add.png">
                 <p>Thêm nhân viên</p>
             </button>
         </div>
         <div class="filter-bar">
-            <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại" onkeydown="clickInput()">
+            <div class="icon-input">
+                <img class="search-icon" src="/content/icon/search.png">
+            <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại" >
+            <img class="x-icon" src="/content/icon/x.svg">
+            
+            </div>
+         
             <select>
                 <option value="all">Tất cả phòng ban</option>
                 <option value="all">Phòng Nhân sự</option>
@@ -91,7 +98,7 @@
                 <option value="all">Thu ngân</option>
                 <option value="all">Nhân viên marketing</option>
             </select>
-            <button class="icon-button">
+            <button class="second-button refresh-button">
                 <img src="/content/icon/refresh.png">
             </button>
         </div>
@@ -364,6 +371,8 @@
             
             
         </table>
+        
+        </div>
         <div class="paging-bar">
             <p>Hiển thị 1-10/1000 nhân viên</p>
             <div class="paging">
@@ -378,7 +387,6 @@
             </div>
             <p>10 nhân viên/trang</p>
 
-        </div>
         </div>
         
     </div>
@@ -527,7 +535,7 @@
             <div class="modal-footer">
                 <div class="right-footer">
                 <button class="m-btn-cancel" onclick="closePopUp()">Huỷ</button>
-                <button class="m-btn-save second-button" type="submit" form="add-employee-form" value="Submit">
+                <button class="m-btn-save icon-button" type="submit" form="add-employee-form" value="Submit">
                     <i class="fa fa-save"></i>
                     <div>Lưu</div>
                 </button>
@@ -536,6 +544,7 @@
             
         </div>
     </div>
+    
     
     
     

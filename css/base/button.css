@@ -1,4 +1,4 @@
-.second-button{
+.icon-button{
     border:none;
       
     background-color:#019160;
@@ -19,5 +19,25 @@
           
     color: #ffffff;
           
-    margin-left: 16px;
+    
+}
+.icon-button:hover{
+    background-color: #2FBE8E;
+}
+.icon-button:active{
+    background-color: #01B075;
+}
+
+.second-button{
+    outline: none;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+}
+.second-button:hover{
+    background-color: #E9EBEE;
+}
+.icon-button:active{
+    background-color: #01B075;
 }

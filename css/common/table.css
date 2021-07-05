@@ -14,6 +14,7 @@
     border-collapse:  collapse;
     height: 675px;
     overflow-y: auto;
+    
     display: block;
     
     
@@ -23,9 +24,7 @@
     
   
   }
-  .employee-list thead,tbody{
-    /* display: block; */
-  }
+  
   .employee-list thead{
     text-align: left;
   }
@@ -36,10 +35,7 @@
     background-color: #ffffff;
     border-bottom: 1px solid #bbbbbb;
   }
-  .employee-list tbody{
-    /* height: 650px;
-    overflow-y: auto;*/
-  } 
+  
   .employee-list tr:nth-child(odd)
   {
     background-color: #e5e5e5;
@@ -48,15 +44,16 @@
    
     padding: 10px;
     border-bottom: 1px solid #bbbbbb;
-    width: 10%;
+    white-space: nowrap;
+
+    
    
   }
   
   
   .paging-bar {
     height: 56px;
-    /* position: absolute;
-    bottom: 0px; */
+   
     display: flex;
     justify-content: space-between;
     padding-left: 16px;

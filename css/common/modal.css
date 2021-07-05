@@ -116,18 +116,7 @@
       
 margin-left: 16px;
   }
-  .add-employee-modal .modal-footer .m-btn-save:hover{
-      
-    background-color: #2FBE8E;
-
-    
-}
-.add-employee-modal .modal-footer .m-btn-save:focus{
-      
-    background-color: #01B075;
-
-    
-}
+ 
   .add-employee-modal .modal-footer .m-btn-save i{
       
     margin-right: 8px;
