@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/test.css">
+    <script src="/lib/jquery-3.6.0.js"></script>
+    
+    
 </head>
-<body>
-    <div class="icon-input">
-        
-        <input type="text">
-        
 
-    </div>
+<body>
+    <div>aaaa</div>
+    
+    <p>dddd</p>
+    <script>
+        $(document).ready(function(){
+            $("div").click(function(){
+                $(this).siblings().toggle();
+       
+            });
+        });
+    </script>
+    
 </body>
+
 </html>

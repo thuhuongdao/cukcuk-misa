@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
     <link rel="stylesheet" href="/css/base/button.css">
     <link rel="stylesheet" href="/css/base/input.css">
-    <link rel="stylesheet" href="/css/common/table.css">
+    <link rel="stylesheet" href="/css/base/dropdown.css">
 
+    <link rel="stylesheet" href="/css/common/table.css">
     <link rel="stylesheet" href="/css/common/main.css">
     <link rel="stylesheet" href="/css/common/navbar.css">
     <link rel="stylesheet" href="/css/common/header.css">
@@ -18,8 +23,13 @@
     <link rel="stylesheet" href="/css/private/employee.css">
     <link rel="stylesheet" href="/css/common/modal.css">
 
+    <script src="/lib/jquery-3.6.0.js"></script>
     <script src="/js/modal.js"></script>
     <script src="/js/navbar.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/table.js"></script>
+
+
     
 <body>
     <div class="header">
@@ -85,7 +95,7 @@
             
             </div>
          
-            <select>
+            <!-- <select>
                 <option value="all">Tất cả phòng ban</option>
                 <option value="all">Phòng Nhân sự</option>
                 <option value="all">Phòng Đào tạo</option>
@@ -97,12 +107,67 @@
                 <option value="all">Giám đốc</option>
                 <option value="all">Thu ngân</option>
                 <option value="all">Nhân viên marketing</option>
-            </select>
+            </select> -->
+            <div class="dropdown">
+                <div class="dropdown-top">
+                    <p class="dropdown-label">Tất cả phòng ban</p>
+                    <img class="dropdown-img" src="/content/img/dropdown.png">
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item dropdown-active">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Tất cả phòng ban</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Phòng Nhân sự</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Phòng Đào tạo</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Phòng Công nghệ</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Phòng marketing</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-top">
+                    <p class="dropdown-label">Tất cả vị trí</p>
+                    <img class="dropdown-img" src="/content/img/dropdown.png">
+                </div>
+                <div class="dropdown-content">
+                    <div class="dropdown-item dropdown-active">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Tất cả vị trí</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Giám đốc</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Thu ngân</p>
+                    </div>
+                    <div class="dropdown-item">
+                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                        <p>Nhân viên</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
             <button class="second-button refresh-button">
                 <img src="/content/icon/refresh.png">
             </button>
         </div>
-        <div class="grid">
+       
         <table class="employee-list" >
             <thead>
             <tr>
@@ -132,247 +197,16 @@
                 <td class="status">Đang thử việc</td>
            
             </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử vic</td>
+            
            
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
-            <tr>
-                <td>NV-567896</td>
-                <td>Đào Thu Hương</td>
-                <td>Nữ</td>
-                <td>26/11/2000</td>
-                <td>0399429273</td>
-                <td>daothuhuongbg123@gmail.com</td>
-                <td>Giám đốc</td>
-                <td>Phòng nhân sự</td>
-                <td>17.739.391</td>
-                <td>Đang thử việc</td>
-           
-            </tr>
+            
         </tbody>
             
             
             
         </table>
         
-        </div>
+
         <div class="paging-bar">
             <p>Hiển thị 1-10/1000 nhân viên</p>
             <div class="paging">
