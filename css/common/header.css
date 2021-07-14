@@ -1,27 +1,30 @@
 .header{
-    /* padding-top: 12px; */
-    /* padding-bottom: 12px; */
+ 
     height: 48px;
     background-color: #ffffff;
-    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+   
 }
-.header > div{
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-.header .left-side{
-    float: left;
-    width: 220px;
-    height: 24px;
-    border-right: 1px solid #E5E5E5;
-    border-bottom: 1px solid #ffffff;
+
+
+.header .left-header{
+
+display: flex;
+
+width: 220px;
+
+align-items: center;
+
+border-right: 1px solid #E5E5E5;
+
+/* box-sizing: content-box; */
 }
 .header .toggle{
 
-    width: 24px;
-    height: 24px;
+    
     margin-left: 16px;
     margin-right: 12px;
+    
 
 }
 .header .cukcuk-icon{
@@ -29,51 +32,53 @@
     height: 24px;
 
 }
-.header .center-side{
-    float: left;
-    
 
+
+.header .header-content{
+    display: flex;
+    border-bottom: 1px solid #E5E5E5;
+    justify-content: space-between;
+    width: calc(100% - 221px);
+}
+
+.header .header-icon{
+    
+    width: 24px;
+    height: 24px;
+}
+.header .center-header{
+    display: flex;
+    align-items: center;
     
 }
 .header .store-name{
-    float: left;
-    font-size: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
+    font-size: 15px;
     margin-left: 24px;
     margin-right: 10px;
+    
 }
-.header .dropdown-img{
-    float: left;
-    width: 24px;
-    height: 24px;
-}
-.header .right-side{
-    float: right;
+
+.header .right-header{
+    
     display: flex;
     align-items: center;
-    height: 24px;
-    /* border-bottom: 1px solid #E5E5E5; */
-}
-.header .icon-header{
-    margin-right: 16px;
-    width: 24px;
-    height: 24px;
     
-
+    
 }
+
 .header .avatar{
     
     
-    margin-right: 16px;
+
     width: 26px;
     height: 26px;
 }
 .header .username{
-    margin-right: 16px;
+  
     font-size: 13px;
     
 }
-
-
+.header .right-item{
+    margin-right: 16px;
+}
 

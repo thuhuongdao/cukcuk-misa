@@ -1,57 +1,6 @@
-.content {
-  float: left;
-  width: calc(100% - 221px);
-  height: calc(100vh - 49px);
-  position: relative;
-}
-.first-content {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.content .employee-lable {
-  font-family: GoogleSans-Bold;
-  font-size: 24px;
-  margin-left: 16px;
-}
-.content .add-employee {
-  
-  margin-right: 16px;
-  margin-top: 16px;
-}
-.content .add-employee img {
-  width: 16px;
-  height: 16px;
-  
-  margin-right: 8px;
-}
-.content .filter-bar{
-  display: flex;
-  
-}
-.content .filter-bar .icon-input{
-  margin-left: 16px;
-  width: 300px;
-}
+.content{
+    width: calc(100% - 221px);
+    
 
-
-
-/* .content .filter-bar select {
-  height: 40px;
-  padding-left: 16px;
-  padding-right: 12px;
-  outline: none;
-  border: 1px solid rgb(187, 187, 187);
-  border-radius: 4px;
-  margin-left: 16px;
-} */
-.refresh-button {
-  
-  width: 40px;
-  position: absolute;
-  right: 16px;
+ 
 }
-
-
-
-

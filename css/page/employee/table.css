@@ -1,0 +1,99 @@
+.wrap-table{
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 24px;
+  height: calc(100% - 142px);
+  
+}
+.employee-list{
+    
+    
+    
+    width: 100%;
+
+
+    border-collapse:  collapse;
+    height: calc(100% - 56px);
+
+    
+
+    
+  }
+  
+  
+  .employee-list tbody{
+    
+
+    display: block;
+    overflow: auto;
+    height: calc(100% - 38px);
+  }
+
+   .employee-list thead,.employee-list tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+} 
+
+  .employee-list thead{
+    text-align: left;
+    width: calc( 100% - 7px);
+
+    
+  }
+  .employee-list th{
+    position: sticky;
+    top:0;
+    z-index: 1;
+    background-color: #ffffff;
+    
+  }
+  
+  .employee-list tr:nth-child(odd)
+  {
+    background-color: #e5e5e5;
+  }
+  .employee-list th,.employee-list td{
+   
+    padding: 10px;
+    /* border-bottom: 1px solid #bbbbbb; */
+    white-space: nowrap;
+    
+
+
+  
+    
+   
+  }
+
+  .employee-list td{
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .employee-list .salary{
+    text-align: right;
+  }
+.employee-list  tbody::-webkit-scrollbar
+{
+width: 7px;
+
+
+}
+.employee-list tbody::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    background-color: #e9ebee;
+    
+}
+.employee-list tbody::-webkit-scrollbar-thumb
+{
+    background-color:#bbbbbb;
+    border-radius: 10px;
+
+
+    
+}
+/* .employee-list tr:hover{
+   background-color: #01feaa; 
+} */

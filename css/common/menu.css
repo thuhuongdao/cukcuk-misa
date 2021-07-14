@@ -1,24 +1,25 @@
-.navbar{
-    float: left;
+.menu{
     width: 220px;
-    border-right: 1px solid #E5E5E5;
-    height: calc(100vh - 49px);
-    
 
+    border-right: 1px solid #E5E5E5;
+    background-color: #ffffff;
 }
-.navbar .navbar-item{
-    width: 100%;
+
+.menu .menu-item{
+    
     height: 44px;
     background-color: #ffffff;
+
     color: #000000;
     font-family: GoogleSans-Regular;
     font-size: 13px;
+
     display: flex;
 }
-.navbar img{
+.menu img{
     width: 20px;
     height: 20px;
-    text-align: center;
+   
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 16px;
@@ -28,13 +29,13 @@
 
 
 
-.navbar div:hover{
+.menu div:hover{
     background-color: #e5e5e5;
     color: #000000;
     
     
 }
-.navbar .active{
+.menu .active{
     background-color: #019160 !important;
     color: #ffffff !important;
     font-family: GoogleSans-Medium !important;

@@ -1,0 +1,27 @@
+.icon-input{
+    
+    
+    
+    
+    
+    
+
+
+}
+.icon-input input{
+    
+    
+}
+.icon-input input::placeholder{
+    font-size: 12px;
+    
+}
+.icon-input .search-icon{
+    margin-left:16px;
+    margin-right: 8px;
+}
+.icon-input .x-icon {
+    
+}
+
+

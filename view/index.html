@@ -4,225 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Copy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="../css/base/button.css">
+    <link rel="stylesheet" href="../css/base/input/input.css">
+    <link rel="stylesheet" href="../css/base/input/icon-input.css">
+    <link rel="stylesheet" href="../css/base/input/label-input.css">
+    <link rel="stylesheet" href="../css/base/dropdown/dropdown-content.css">
+    <link rel="stylesheet" href="../css/base/dropdown/dropdown.css">
+    <link rel="stylesheet" href="../css/base/dropdown/combo-box.css">
+
+    <link rel="stylesheet" href="../css/common/main.css">
+    <link rel="stylesheet" href="../css/common/header.css">
+    <link rel="stylesheet" href="../css/common/wrap.css">
+    <link rel="stylesheet" href="../css/common/menu.css">
+    <link rel="stylesheet" href="../css/common/content.css">
+
+    <link rel="stylesheet" href="../css/page/employee/first-content.css">
+    <link rel="stylesheet" href="../css/page/employee/filter-bar.css">
+    <link rel="stylesheet" href="../css/page/employee/table.css">
+    <link rel="stylesheet" href="../css/page/employee/paging-bar.css">
+
+    <link rel="stylesheet" href="../css/page/employee/modal.css">
+
+
+    <script src="../lib/jquery-3.6.0.js"></script>
+
+    <script src="../js/base/input.js"></script>
+    <script src="../js/base/dropdown.js"></script>
+    <script src="../js/base/combo-box.js"></script>
+
+
+    <script src="../js/common/toggle.js"></script>
+    <script src="../js/common/menu.js"></script>
+    <script src="../js/common/table.js"></script>
+
+    <script src="../js/page/employee/modal.js"></script>
     
 
-
-    <link rel="stylesheet" href="/css/base/button.css">
-    <link rel="stylesheet" href="/css/base/input.css">
-    <link rel="stylesheet" href="/css/base/dropdown.css">
-
-    <link rel="stylesheet" href="/css/common/table.css">
-    <link rel="stylesheet" href="/css/common/main.css">
-    <link rel="stylesheet" href="/css/common/navbar.css">
-    <link rel="stylesheet" href="/css/common/header.css">
-    <link rel="stylesheet" href="/css/common/content.css">
-    <link rel="stylesheet" href="/css/private/employee.css">
-    <link rel="stylesheet" href="/css/common/modal.css">
-
-    <script src="/lib/jquery-3.6.0.js"></script>
-    <script src="/js/modal.js"></script>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/dropdown.js"></script>
-    <script src="/js/table.js"></script>
-
-
-    
+</head>
 <body>
     <div class="header">
-        <div class="left-side">
-            <img class="toggle" src="/content/img/toggle.png">
-            <img class="cukcuk-icon" src="/content/img/cukcuk-logo.png">
+        <div class="left-header">
+            <img class="toggle header-icon" src="../content/img/toggle.png">
+            <img class="cukcuk-icon" src="../content/img/cukcuk-logo.png">
         </div>
-        <div class="center-side">
-            <p class="store-name">Nhà hàng Biển Đông</p>
-            <img class="dropdown-img" src="/content/img/dropdown.png">
-        </div>
-        <div class="right-side">
-            <img class="icon-header" src="/content/font/fontawesome-5.15.1//svgs/regular/bell.svg">
-            <img class="avatar" src="/content/icon/avatar-default.png">
-            <p class="username" >Đào Thu Hương</p>
-            <img class="icon-header" src="/content/icon/option.png">
-
+        <div class="header-content">
+            <div class="center-header">
+                <p class="store-name">Nhà hàng Biển Đông</p>
+                <img class="header-icon" src="../content/img/dropdown.png">
+            </div>
             
+            <div class="right-header">
+                <img class="right-item header-icon bell" src="../content/font/fontawesome-5.15.1//svgs/regular/bell.svg">
+                <img class="right-item avatar" src="../content/icon/avatar-default.png">
+                <p class="right-item username" >Đào Thu Hương</p>
+                <img class="right-item header-icon option" src="../content/icon/option.png">
+            </div>
         </div>
-
-
     </div>
-   
-
- 
-    <div class="navbar">
-        <div class="navbar-item active"> 
-            <img src="/content/icon/dashboard.png" >
-            <p>Tổng quan</p>
+    <div class="wrap">
+        <div class="menu">
+            <div class="menu-item active"> 
+                <img src="../content/icon/dashboard.png" >
+                <p>Tổng quan</p>
+            </div>
+            <div class="menu-item" > 
+                <img src="../content/icon/report.png">
+                <p>Báo cáo</p>
+            </div>
+            <div class="menu-item"> 
+                <img src="../content/icon/dashboard.png">
+                <p>Mua hàng</p>
+            </div>
+            <div class="menu-item"> 
+                <img src="../content/icon/dic-employee.png">
+                <p>Danh mục nhân viên</p>
+            </div>
+            <div class="menu-item"> 
+                <img src="../content/icon/setting.png">
+                <p>Thiết lập hệ thống</p>
+            </div>
+        
         </div>
-        <div class="navbar-item" > 
-            <img src="/content/icon/report.png">
-            <p>Báo cáo</p>
-        </div>
-        <div class="navbar-item"> 
-            <img src="/content/icon/dashboard.png">
-            <p>Mua hàng</p>
-        </div>
-        <div class="navbar-item"> 
-            <img src="/content/icon/dic-employee.png">
-            <p>Danh mục nhân viên</p>
-        </div>
-        <div class="navbar-item"> 
-            <img src="/content/icon/setting.png">
-            <p>Thiết lập hệ thống</p>
-        </div>
-       
-    </div>
- 
-    <div class="content">
-        <div class="first-content">
+        <div class="content">
+            <div class="first-content">
             <p class="employee-lable">Danh sách nhân viên</p>
-            <button class="add-employee icon-button" onclick="addEmployee()">
-                <img src="/content/icon/add.png">
-                <p>Thêm nhân viên</p>
-            </button>
-        </div>
-        <div class="filter-bar">
-            <div class="icon-input">
-                <img class="search-icon" src="/content/icon/search.png">
-                <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại" >
-                <img class="x-icon" src="/content/icon/x.svg">
-            
+                <button class="add-employee icon-button" onclick="addEmployee()">
+                    <img src="../content/icon/add.png">
+                    <p>Thêm nhân viên</p>
+                </button>
             </div>
-         
-            <!-- <select>
-                <option value="all">Tất cả phòng ban</option>
-                <option value="all">Phòng Nhân sự</option>
-                <option value="all">Phòng Đào tạo</option>
-                <option value="all">Phòng Công nghệ</option>
-                <option value="all">Phòng marketing</option>
-            </select>
-            <select>
-                <option value="all">Tất cả vị trí</option>
-                <option value="all">Giám đốc</option>
-                <option value="all">Thu ngân</option>
-                <option value="all">Nhân viên marketing</option>
-            </select> -->
-            <div class="dropdown">
-                <div class="dropdown-top">
-                    <p class="dropdown-label">Tất cả phòng ban</p>
-                    <img class="dropdown-img" src="/content/img/dropdown.png">
-                </div>
-                <div class="dropdown-content">
-                    <div class="dropdown-item dropdown-active">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Tất cả phòng ban</p>
-                    </div>
-                    <div class="dropdown-item">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Phòng Nhân sự</p>
-                    </div>
-                    <div class="dropdown-item">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Phòng Đào tạo</p>
-                    </div>
-                    <div class="dropdown-item">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Phòng Công nghệ</p>
-                    </div>
-                    <div class="dropdown-item">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Phòng marketing</p>
-                    </div>
-                </div>
+            <div class="filter-bar">
+                <div class="input icon-input">
+                    <img class="search-icon" src="../content/icon/search.png">
+                    <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại" >
+                    <img class="x-icon" src="../content/icon/x.svg">
                 
-            </div>
-            <div class="dropdown">
-                <div class="dropdown-top">
-                    <p class="dropdown-label">Tất cả vị trí</p>
-                    <img class="dropdown-img" src="/content/img/dropdown.png">
                 </div>
-                <div class="dropdown-content">
-                    <div class="dropdown-item dropdown-active">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Tất cả vị trí</p>
+             
+               
+                <div class="dropdown">
+                    <div class="dropdown-top">
+                        <p class="dropdown-label">Tất cả phòng ban</p>
+                        <!-- <img class="dropdown-img" src="../content/img/dropdown.png"> -->
+                        <i class="dropdown-icon fa fa-angle-down"></i>
                     </div>
-                    <div class="dropdown-item">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Giám đốc</p>
-                    </div>
-                    <div class="dropdown-item">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Thu ngân</p>
-                    </div>
-                    <div class="dropdown-item">
-                        <div class="check-icon"><i class="fas fa-check"></i></div>
-                        <p>Nhân viên</p>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item dropdown-active">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Tất cả phòng ban</p>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Phòng Nhân sự</p>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Phòng Đào tạo</p>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Phòng Công nghệ</p>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Phòng marketing</p>
+                        </div>
                     </div>
                     
                 </div>
+                <div class="dropdown">
+                    <div class="dropdown-top">
+                        <p class="dropdown-label">Tất cả vị trí</p>
+                        <i class="dropdown-icon fa fa-angle-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-item dropdown-active">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Tất cả vị trí</p>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Giám đốc</p>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Thu ngân</p>
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                            <p>Nhân viên</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <button class="second-button refresh-button">
+                    <img src="../content/icon/refresh.png">
+                </button>
+            </div>
+           <div class="wrap-table">
+
+           
+            <table class="employee-list" >
+                <thead>
+                <tr>
+                    <th class="employee-id">Mã nhân viên</th>
+                    <th class="fullname">Họ và tên</th>
+                    <th class="gender">Giới tính</th>
+                    <th class="birthday">Ngày sinh</th>
+                    <th class="mobile">Điện thoại</th>
+                    <th class="email">Email</th>
+                    <th class="position">Chức vụ</th>
+                    <th class="department">Phòng ban</th>
+                    <th class="salary">Mức lương cơ bản</th>
+                    <th class="status">Tình trạng công việc</th>
+                </tr>
+            </thead>
+            <tbody>
                 
+                
+               
+                
+            </tbody>
+                
+                
+                
+            </table>
+            <div class="paging-bar">
+                <p>Hiển thị 1-10/1000 nhân viên</p>
+                <div class="paging">
+                    <button class="btn-angle"><i class="fa fa-angle-double-left"></i></button>
+                    <button class="btn-angle"><i class="fa fa-angle-left"></i></button>
+                    <button class="btn-number"  name="page">1</button>
+                    <button class="btn-number" name="page">2</button>
+                    <button class="btn-number" name="page">3</button>
+                    <button class="btn-number" name="page">4</button>
+                    <button class="btn-angle"><i class="fa fa-angle-right"></i></button>
+                    <button class="btn-angle"><i class="fa fa-angle-double-right"></i></button>
+                </div>
+                <p>10 nhân viên/trang</p>
+    
             </div>
-            <button class="second-button refresh-button">
-                <img src="/content/icon/refresh.png">
-            </button>
+           </div>
+            
+    
+            
         </div>
-       
-        <table class="employee-list" >
-            <thead>
-            <tr>
-                <th class="employee-id">Mã nhân viên</th>
-                <th class="fullname">Họ và tên</th>
-                <th class="gender">Giới tính</th>
-                <th class="birthday">Ngày sinh</th>
-                <th class="mobile">Điện thoại</th>
-                <th class="email">Email</th>
-                <th class="position">Chức vụ</th>
-                <th class="department">Phòng ban</th>
-                <th class="salary">Mức lương cơ bản</th>
-                <th class="status">Tình trạng công việc</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="employee-id">NV-567896</td>
-                <td class="fullname">Đào Thu Hương</td>
-                <td class="gender">Nữ</td>
-                <td class="birthday">26/11/2000</td>
-                <td class="mobile">0399429273</td>
-                <td class="email">daothuhuongbg123@gmail.com</td>
-                <td class="position">Giám đốc</td>
-                <td class="department">Phòng nhân sự</td>
-                <td class="salary">17.739.391</td>
-                <td class="status">Đang thử việc</td>
-           
-            </tr>
-            
-           
-            
-        </tbody>
-            
-            
-            
-        </table>
-        
-
-        <div class="paging-bar">
-            <p>Hiển thị 1-10/1000 nhân viên</p>
-            <div class="paging">
-                <button class="btn-angle"><i class="fa fa-angle-double-left"></i></button>
-                <button class="btn-angle"><i class="fa fa-angle-left"></i></button>
-                <button class="btn-number"  name="page">1</button>
-                <button class="btn-number" name="page">2</button>
-                <button class="btn-number" name="page">3</button>
-                <button class="btn-number" name="page">4</button>
-                <button class="btn-angle"><i class="fa fa-angle-right"></i></button>
-                <button class="btn-angle"><i class="fa fa-angle-double-right"></i></button>
-            </div>
-            <p>10 nhân viên/trang</p>
-
-        </div>
-        
     </div>
     <!-- The Modal -->
     <div id="add-employee-modal-id" class="add-employee-modal">
@@ -231,14 +223,14 @@
             <div class="modal-top">
             <div class="modal-header">
                 <p>Thông tin nhân viên</p>
-                <img id="x" src="/content/icon/x.svg" onclick="closePopUp()">
+                <img id="x" src="../content/icon/x.svg" onclick="closePopUp()">
 
             </div>
             <form id="add-employee-form">
             <div class="modal-body">
                 
                 <div class="left-body">
-                    <img src="/content/img/default-avatar.jpg">
+                    <img src="../content/img/default-avatar.jpg">
                     <p>(Vui lòng chọn ảnh có định</p>
                     <p> dạng </p>
                     <p>.jpg .jpeg, .png, .gif )</p>
@@ -252,8 +244,18 @@
                             
                         </tr>
                         <tr>
-                            <td><input type="text"></td>
-                            <td><input type="text"></td>
+                            <td><div class="input label-input" data-title="Here is some text for example">
+        
+                                <input type="text"  placeholder="" >
+                                <img class="x-icon" src="../content/icon/x.svg">
+                            
+                            </div></td>
+                            <td><div class="input label-input">
+        
+                                <input type="text" placeholder="" required>
+                                <img class="x-icon" src="../content/icon/x.svg">
+                            
+                            </div></td>
 
                             
                         </tr>
@@ -266,12 +268,36 @@
                             <td><input type="date"></td>
                             
                             <td>
-                                <select name="gender" >
-                                    <option value="male">Nam</option>
-                                    <option value="female">Nữ</option>
-                                    <option value="dif">Khác</option>
-
-                                 </select>
+                                <div class="combo-box">
+                                    <div class="combo-box-selected">
+                                
+                                        
+                                        <input type="text" placeholder="" >
+                                        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+                                            
+                                    
+                                        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
+                                    </div>
+                                    <div class="combo-box-content">
+                                        <div class="combo-box-item combo-box-active">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Nam</p>
+                                        </div>
+                                        <div class="combo-box-item">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Nữ</p>
+                                        </div>
+                                        <div class="combo-box-item">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Không xác định</p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                            
+                            
+                            
+                                </div>
                             </td>
                             
                             
@@ -282,7 +308,12 @@
                             
                         </tr>
                         <tr>
-                            <td><input type="text"></td>
+                            <td><div class="input label-input">
+        
+                                <input type="text" placeholder="" required >
+                                <img class="x-icon" src="../content/icon/x.svg">
+                            
+                            </div></td>
                             <td><input type="date"></td>
 
                             
@@ -293,7 +324,12 @@
                             
                         </tr>
                         <tr>
-                            <td><input type="text" value="Tỉnh Bắc Giang"/></td>
+                            <td><div class="input label-input">
+        
+                                <input type="text" placeholder="" >
+                                <img class="x-icon" src="../content/icon/x.svg">
+                            
+                            </div></td>
                             
                             
                         </tr>
@@ -304,8 +340,18 @@
                             
                         </tr>
                         <tr>
-                           <td> <input type="number"></td>
-                           <td><input type="number"></td>
+                           <td> <div class="input label-input">
+        
+                            <input type="email" placeholder="" required>
+                            <img class="x-icon" src="../content/icon/x.svg">
+                        
+                        </div></td>
+                           <td><div class="input label-input">
+        
+                            <input type="text" placeholder="" >
+                            <img class="x-icon" src="../content/icon/x.svg">
+                        
+                        </div></td>
 
                         </tr>
                     </table>
@@ -317,16 +363,72 @@
                         </tr>
                         <tr>
                             <td>
-                                <select name="position">
-                                    <option value="manager">Giám đốc</option>
+                                <div class="combo-box">
+                                    <div class="combo-box-selected">
+                                
                                     
-                                </select>
+                                        <input type="text" placeholder="" >
+                                        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+                                    
+                                    
+                                        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
+                                    </div>
+                                    <div class="combo-box-content">
+                                        <div class="combo-box-item combo-box-active">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Giám đốc</p>
+                                        </div>
+                                        <div class="combo-box-item">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Thu ngân</p>
+                                        </div>
+                                        <div class="combo-box-item">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Nhân viên</p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                            
+                            
+                            
+                                </div>
                             </td>
                             <td>
-                                <select name="department">
-                                    <option value="">Phòng nhân sự</option>
+                                <div class="combo-box">
+                                    <div class="combo-box-selected">
+                                
                                     
-                                </select>
+                                        <input type="text" placeholder="" >
+                                        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+                                    
+                                    
+                                        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
+                                    </div>
+                                    <div class="combo-box-content">
+                                        
+                                        <div class="combo-box-item combo-box-active">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Phòng Nhân sự</p>
+                                        </div>
+                                        <div class="combo-box-item">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Phòng Đào tạo</p>
+                                        </div>
+                                        <div class="combo-box-item">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Phòng Công nghệ</p>
+                                        </div>
+                                        <div class="combo-box-item">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Phòng marketing</p>
+                                        </div>
+                                    </div>
+                                    
+                            
+                            
+                            
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -335,21 +437,50 @@
 
                         </tr>
                         <tr>
-                            <td><input type="number"></td>
-                            <td><input type="number"></td>
+                            <td><div class="input label-input">
+        
+                                <input type="text" placeholder="" >
+                                <img class="x-icon" src="../content/icon/x.svg">
+                            
+                            </div></td>
+                            <td><div class="input label-input">
+        
+                                <input type="text" placeholder="" >
+                                <img class="x-icon" src="../content/icon/x.svg">
+                            
+                            </div></td>
 
                         </tr>
                         <tr>
                             <td><p>Ngày gia nhập công ty</p></td>
-                            <td><p>tình trạng công việc</p></td>
+                            <td><p>Tình trạng công việc</p></td>
 
                         </tr>
                         <tr>
                             <td><input type="date"></td>
                             <td>
-                                <select name="status">
-                                    <option value="">Đang làm việc</option>
-                                </select>
+                                <div class="combo-box">
+                                    <div class="combo-box-selected">
+                                
+                                    
+                                        <input type="text" placeholder="" >
+                                        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+                                    
+                                    
+                                        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
+                                    </div>
+                                    <div class="combo-box-content">
+                                        <div class="combo-box-item combo-box-active">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Đang thử việc</p>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                            
+                            
+                            
+                                </div>
                             </td>
                         </tr>
                         
@@ -379,10 +510,7 @@
         </div>
     </div>
     
-    
-    
-    
-
+ 
     
 </body>
 </html>

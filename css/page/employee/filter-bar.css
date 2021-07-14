@@ -1,0 +1,23 @@
+.content .filter-bar{
+    display: flex;
+    
+  }
+  .content .filter-bar .icon-input{
+    margin-left: 16px;
+    width: 300px;
+  }
+  
+  
+  
+  
+  .refresh-button {
+    
+    width: 40px;
+    position: absolute;
+    right: 16px;
+  }
+  
+  
+  
+  
+  

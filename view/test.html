@@ -1,42 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-.ancestors * { 
-  display: block;
-  border: 2px solid lightgrey;
-  color: lightgrey;
-  padding: 5px;
-  margin: 15px;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+
+
+    <link rel="stylesheet" href="../css/base/input/input.css">
+    <link rel="stylesheet" href="../css/base/input/label-input.css">
+
+
+    <style>
+       body {
+  font-family: sans-serif;
 }
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("span").parentsUntil("div").css({"color": "red", "border": "2px solid red"});
-});
-</script>
+/*You can use [title] selector as well*/
+[data-title] {
+  
+  position: relative;
+  
+}
+
+/* [data-title]:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  bottom: -26px;
+  display: inline-block;
+  padding: 3px 30px;
+  border-radius: 2px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  white-space: nowrap;
+} */
+[data-title]::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 8px;
+  display: inline-block;
+  color: #fff;
+  border: 8px solid transparent;	
+  border-bottom: 8px solid #000;
+}
+    </style>
+    
 </head>
 
-<body class="ancestors"> body (great-great-grandparent)
-  <div style="width:500px;">div (great-grandparent)
-    <ul>ul (grandparent)  
-      <li>li (direct parent)
-        <span>span
-        <div > div2
-        <ul> ul2
-            <li>li2
-                <span>hello</span>
-
-            </li>
-
-        </ul>
-        </div>
+<body>
+  <h1>Styling html title tooltip</h1>
+  
+  <div class="input label-input" data-title="">
         
-        </span>
-      </li>
-    </ul>   
-  </div>
-</body>
+    <input type="text"  placeholder="" >
+    <img class="x-icon" src="../content/icon/x.svg">
 
+</div>
+ 
+    
+</body>
 </html>

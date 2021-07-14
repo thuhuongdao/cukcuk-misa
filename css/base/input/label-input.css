@@ -1,0 +1,7 @@
+.label-input input{
+    margin-left: 16px ;
+}
+.label-input input::placeholder{
+    font-size: 11px;
+    
+}

@@ -1,0 +1,22 @@
+.first-content {
+    display: flex;
+    
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+   
+    
+  }
+  .first-content .employee-lable {
+    font-family: GoogleSans-Bold;
+    font-size: 24px;
+    margin-top: 24px;
+   
+  }
+  .first-content .add-employee{
+      margin-top: 16px;
+  }
+  
+  
+  
+  
