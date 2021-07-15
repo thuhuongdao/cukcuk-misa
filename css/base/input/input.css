@@ -31,9 +31,7 @@
     margin-right: 10px;
     display: none;
 }
-.input-focus{
-    border-color: #019160;
-}
+
 /* [data-title]::before {
     content: attr(data-title);
     position: absolute;

@@ -13,42 +13,14 @@
 
     <link rel="stylesheet" href="../css/base/input/input.css">
     <link rel="stylesheet" href="../css/base/input/label-input.css">
+    <link rel="stylesheet" href="../css/base/input/input-title.css">
+    <link rel="stylesheet" href="../css/base/input/input.css">
+    <link rel="stylesheet" href="../css/base/input/label-input.css">
+    <link rel="stylesheet" href="../css/base/input/input-title.css">
 
 
     <style>
-       body {
-  font-family: sans-serif;
-}
-/*You can use [title] selector as well*/
-[data-title] {
-  
-  position: relative;
-  
-}
-
-/* [data-title]:hover::before {
-  content: attr(data-title);
-  position: absolute;
-  bottom: -26px;
-  display: inline-block;
-  padding: 3px 30px;
-  border-radius: 2px;
-  background: #000;
-  color: #fff;
-  font-size: 12px;
-  font-family: sans-serif;
-  white-space: nowrap;
-} */
-[data-title]::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  left: 8px;
-  display: inline-block;
-  color: #fff;
-  border: 8px solid transparent;	
-  border-bottom: 8px solid #000;
-}
+      
     </style>
     
 </head>
@@ -56,13 +28,17 @@
 <body>
   <h1>Styling html title tooltip</h1>
   
-  <div class="input label-input" data-title="">
+  <div class="input label-input" >
         
     <input type="text"  placeholder="" >
     <img class="x-icon" src="../content/icon/x.svg">
+    
+    <div class="title">in the works i will show you money aaaaaaaaaaaaaaaa aaaaaaaaaa </div>
+    <i class="fas fa-caret-down"></i>
 
 </div>
  
     
+<!-- Code injected by live-server -->
 </body>
 </html>

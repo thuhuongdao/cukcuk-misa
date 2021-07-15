@@ -3,11 +3,14 @@ $(document).ready(function(){
     $(".input input").focus(function(){
 
 
-   
-        $(this).parent().addClass("input-focus");
+        console.log("focus")
+        $(this).parent().css("border-color","#019160")
+        $(this).siblings(".title").css("display","none");
+            $(this).siblings(".fa-caret-down").css("display","none");
     })
     $(".input input").keyup(function(){
 
+        console.log("key up")
         console.log($(this).val());
         if($(this).val() != ""){
            
@@ -17,16 +20,24 @@ $(document).ready(function(){
         }
     })
     $(".input .x-icon").click(function(){
-        console.log("co vao day");
+        console.log("x-icon");
         $(this).siblings("input").val("");
         $(this).css("display", "none");
+        $(this).prev().focus();
+      
+        
     })
     
-    $(".input input").blur(function(){
+     $(".input input").blur(function(){
 
 
-        console.log("heoo");
-        $(this).parent().removeClass("input-focus");
+        console.log("blur");
+        $(this).parent().css("border-color","#bbbbbb")
+        if($(this).val()== ""){
+            $(this).siblings(".title").css("display","block");
+            $(this).siblings(".fa-caret-down").css("display","block");
+            $(this).parent().css("border-color","#FF4747")
+        }
         
 
     })

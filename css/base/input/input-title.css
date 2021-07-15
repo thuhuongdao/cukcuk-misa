@@ -1,0 +1,32 @@
+.input {
+    position: relative;
+  }
+  .input .title{
+    position: absolute;
+bottom: 40px;
+width: 200px;
+left: 50px;
+
+padding: 10px;
+border-radius: 5px;
+background: #FF4747;
+color: #ffffff;
+font-size: 13px;
+text-align: center;
+display: none;
+
+
+
+   }
+   .input i{
+
+position: absolute;
+bottom: 25px;
+left: 50%;
+display: inline-block;
+color: #FF4747;
+font-size: 30px;
+display: none;
+
+
+   }
