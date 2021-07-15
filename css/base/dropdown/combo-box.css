@@ -96,7 +96,7 @@ border-radius: 0 4px 4px 0;
     
 }
 
-.combo-box-content .combo-box-item:hover{
+.combo-box-content .combo-box-item-hover{
     background-color: #E9EBEE;
 }
 .combo-box-content .combo-box-active{
