@@ -96,6 +96,11 @@
 .add-employee-modal .right-body .information select:focus {
   border: 1px solid rgb(1, 145, 96);
 } */
+
+.vnd{
+  padding-right: 10px;
+  font-style: italic;
+}
 .add-employee-modal .right-body .information input[type=date] {
   box-sizing: border-box;
   width: 302px;

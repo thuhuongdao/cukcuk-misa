@@ -13,17 +13,14 @@
 }
 .combo-box-selected input{
     border: none;
-    
     outline: none;
     padding: 0;
     height: 36px;
-
-    width: calc(100% - 93px);
+    width: calc(100% - 40px);
     font-size: 13px;
     font-family: GoogleSans-Regular;
     color: #000000;
     margin-left: 16px;
-
 }
 .combo-box-selected input::placeholder{
  
@@ -59,6 +56,10 @@ margin-left: auto;
    
 border-radius: 0 4px 4px 0;
 }
+.combo-box-selected .wrap-drop-icon:hover{
+   
+    background-color: #e5e5e5;
+}
 .combo-box-selected .dropdown-icon{
     font-size: 20px;
     
@@ -71,7 +72,7 @@ border-radius: 0 4px 4px 0;
     position: absolute;
     top: 44px;
     z-index: 2;
-    display: none;
+    display: block;
 }
 .combo-box-content .combo-box-item{
     width: 302px;
@@ -79,7 +80,7 @@ border-radius: 0 4px 4px 0;
     display: flex;
     align-items: center;
     background-color: #ffffff;
-    
+    display: none;
    
 
 

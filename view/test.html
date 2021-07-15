@@ -11,32 +11,50 @@
 
 
 
-    <link rel="stylesheet" href="../css/base/input/input.css">
-    <link rel="stylesheet" href="../css/base/input/label-input.css">
-    <link rel="stylesheet" href="../css/base/input/input-title.css">
-    <link rel="stylesheet" href="../css/base/input/input.css">
-    <link rel="stylesheet" href="../css/base/input/label-input.css">
-    <link rel="stylesheet" href="../css/base/input/input-title.css">
+    <link rel="stylesheet" href="../css/base/dropdown/combo-box.css">
+
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../css/base/input/input.css"></script>
+    <script src="../js/base/combo-box.js"></script>
 
 
-    <style>
-      
-    </style>
+    
     
 </head>
 
 <body>
-  <h1>Styling html title tooltip</h1>
-  
-  <div class="input label-input" >
+  <div class="combo-box">
+    <div class="combo-box-selected">
+
         
-    <input type="text"  placeholder="" >
-    <img class="x-icon" src="../content/icon/x.svg">
+        <input autocomplete="off" class="combo-box-input" id="employee-gender" type="text" placeholder="" >
+        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+            
     
-    <div class="title">in the works i will show you money aaaaaaaaaaaaaaaa aaaaaaaaaa </div>
-    <i class="fas fa-caret-down"></i>
+        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
+    </div>
+    <div class="combo-box-content">
+        <div class="combo-box-item combo-box-active">
+            <div class="check-icon"><i class="fas fa-check"></i></div>
+            <p>Nam</p>
+        </div>
+        <div class="combo-box-item">
+            <div class="check-icon"><i class="fas fa-check"></i></div>
+            <p>Nữ</p>
+        </div>
+        <div class="combo-box-item">
+            <div class="check-icon"><i class="fas fa-check"></i></div>
+            <p>Khác</p>
+        </div>
+        
+    </div>
+    
+
+
 
 </div>
+
+
  
     
 <!-- Code injected by live-server -->

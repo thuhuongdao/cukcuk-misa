@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/base/input/icon-input.css">
     <link rel="stylesheet" href="../css/base/input/label-input.css">
     <link rel="stylesheet" href="../css/base/input/input-title.css">
-    <link rel="stylesheet" href="../css/base/dropdown/dropdown-content.css">
+    <!-- <link rel="stylesheet" href="../css/base/dropdown/dropdown-content.css"> -->
     <link rel="stylesheet" href="../css/base/dropdown/dropdown.css">
     <link rel="stylesheet" href="../css/base/dropdown/combo-box.css">
 
@@ -41,9 +41,10 @@
 
     <script src="../js/common/toggle.js"></script>
     <script src="../js/common/menu.js"></script>
-    <script src="../js/common/table.js"></script>
+    <!-- <script src="../js/common/table.js"></script> -->
 
-    <script src="../js/page/employee/modal.js"></script>
+    <script src="../js/page/employee/validate.js"></script>
+    <script src="../js/page/employee/employee.js"></script>
     
 
 </head>
@@ -94,7 +95,7 @@
         <div class="content">
             <div class="first-content">
             <p class="employee-lable">Danh sách nhân viên</p>
-                <button class="add-employee icon-button" onclick="addEmployee()">
+                <button id="btn-add-employee" class="add-employee icon-button" >
                     <img src="../content/icon/add.png">
                     <p>Thêm nhân viên</p>
                 </button>
@@ -150,7 +151,7 @@
                         </div>
                         <div class="dropdown-item">
                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                            <p>Giám đốc</p>
+                            <p>Phòng </p>
                         </div>
                         <div class="dropdown-item">
                             <div class="check-icon"><i class="fas fa-check"></i></div>
@@ -224,7 +225,7 @@
             <div class="modal-top">
             <div class="modal-header">
                 <p>Thông tin nhân viên</p>
-                <img id="x" src="../content/icon/x.svg" onclick="closePopUp()">
+                <img  id="x" src="../content/icon/x.svg" >
 
             </div>
             <form id="add-employee-form">
@@ -247,7 +248,7 @@
                         <tr>
                             <td><div class="input label-input" >
         
-                                <input type="text"  placeholder="" >
+                                <input id="employee-code" class="valid-input" type="text"  placeholder="" >
                                 <img class="x-icon" src="../content/icon/x.svg">
                                 <div class="title">Thông tin này là bắt buộc </div>
                                 <i class="fas fa-caret-down"></i>
@@ -255,7 +256,7 @@
                             </div></td>
                             <td><div class="input label-input">
         
-                                <input type="text" placeholder="" required>
+                                <input id="employee-fullname" class="valid-input" type="text" placeholder="" required>
                                 <img class="x-icon" src="../content/icon/x.svg">
                                 <div class="title">Thông tin này là bắt buộc</div>
     <i class="fas fa-caret-down"></i>
@@ -270,14 +271,14 @@
                             
                         </tr>
                         <tr>
-                            <td><input type="date"></td>
+                            <td><input id="employee-dob" type="date"></td>
                             
                             <td>
                                 <div class="combo-box">
                                     <div class="combo-box-selected">
                                 
                                         
-                                        <input type="text" placeholder="" >
+                                        <input id="employee-gender" type="text" placeholder="" >
                                         <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
                                             
                                     
@@ -315,13 +316,13 @@
                         <tr>
                             <td><div class="input label-input">
         
-                                <input type="text" placeholder="" required >
+                                <input id="employee-identify" class="valid-input" type="text" placeholder="" required >
                                 <img class="x-icon" src="../content/icon/x.svg">
                                 <div class="title">Thông tin này là bắt buộc</div>
     <i class="fas fa-caret-down"></i>
                             
                             </div></td>
-                            <td><input type="date"></td>
+                            <td><input id="employee-indetify-date" type="date"></td>
 
                             
                         </tr>
@@ -333,7 +334,7 @@
                         <tr>
                             <td><div class="input label-input">
         
-                                <input type="text" placeholder="" >
+                                <input id="employee-identify-place" type="text" placeholder="" >
                                 <img class="x-icon" src="../content/icon/x.svg">
                             
                             </div></td>
@@ -349,16 +350,18 @@
                         <tr>
                            <td> <div class="input label-input">
         
-                            <input type="email" placeholder="" required>
+                            <input id="employee-email" class="valid-input" type="email"  placeholder="" required>
                             <img class="x-icon" src="../content/icon/x.svg">
                             <div class="title">Thông tin này là bắt buộc </div>
-    <i class="fas fa-caret-down"></i>
+                            <i class="fas fa-caret-down"></i>
                         
                         </div></td>
                            <td><div class="input label-input">
         
-                            <input type="text" placeholder="" >
+                            <input id="employee-phone" class="valid-input" type="text" placeholder="" >
                             <img class="x-icon" src="../content/icon/x.svg">
+                            <div class="title">Thông tin này là bắt buộc</div>
+                            <i class="fas fa-caret-down"></i>
                         
                         </div></td>
 
@@ -376,7 +379,7 @@
                                     <div class="combo-box-selected">
                                 
                                     
-                                        <input type="text" placeholder="" >
+                                        <input id="employee-position" type="text" placeholder="" >
                                         <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
                                     
                                     
@@ -385,15 +388,19 @@
                                     <div class="combo-box-content">
                                         <div class="combo-box-item combo-box-active">
                                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Giám đốc</p>
+                                            <p>Phòng Đào tạo</p>
                                         </div>
                                         <div class="combo-box-item">
                                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Thu ngân</p>
+                                            <p>Phòng Nghiên Cứu</p>
                                         </div>
                                         <div class="combo-box-item">
                                             <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Nhân viên</p>
+                                            <p>Phòng Tài Chính</p>
+                                        </div>
+                                        <div class="combo-box-item">
+                                            <div class="check-icon"><i class="fas fa-check"></i></div>
+                                            <p>Phòng Nhân sự</p>
                                         </div>
                                         
                                     </div>
@@ -408,7 +415,7 @@
                                     <div class="combo-box-selected">
                                 
                                     
-                                        <input type="text" placeholder="" >
+                                        <input id="employee-department" type="text" placeholder="" >
                                         <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
                                     
                                     
@@ -448,14 +455,15 @@
                         <tr>
                             <td><div class="input label-input">
         
-                                <input type="text" placeholder="" >
+                                <input id="employee-tax-code" type="text" placeholder="" >
                                 <img class="x-icon" src="../content/icon/x.svg">
                             
                             </div></td>
                             <td><div class="input label-input">
         
-                                <input type="text" placeholder="" >
+                                <input id="employee-salary" type="text" placeholder="" >
                                 <img class="x-icon" src="../content/icon/x.svg">
+                                <p class="vnd">(VNĐ)</p>
                             
                             </div></td>
 
@@ -466,13 +474,13 @@
 
                         </tr>
                         <tr>
-                            <td><input type="date"></td>
+                            <td><input id="employee-joindate" type="date"></td>
                             <td>
                                 <div class="combo-box">
                                     <div class="combo-box-selected">
                                 
                                     
-                                        <input type="text" placeholder="" >
+                                        <input id="employee-status" type="text" placeholder="" >
                                         <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
                                     
                                     
@@ -509,7 +517,7 @@
             <div class="modal-footer">
                 <div class="right-footer">
                 <button class="m-btn-cancel" onclick="closePopUp()">Huỷ</button>
-                <button class="m-btn-save icon-button" type="submit" form="add-employee-form" value="Submit">
+                <button id="btn-save-employee" class="m-btn-save icon-button" type="button" form="add-employee-form" >
                     <i class="fa fa-save"></i>
                     <div>Lưu</div>
                 </button>

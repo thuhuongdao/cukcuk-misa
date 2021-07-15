@@ -5,8 +5,7 @@ $(document).ready(function(){
 
         console.log("focus")
         $(this).parent().css("border-color","#019160")
-        $(this).siblings(".title").css("display","none");
-            $(this).siblings(".fa-caret-down").css("display","none");
+        
     })
     $(".input input").keyup(function(){
 
@@ -33,11 +32,8 @@ $(document).ready(function(){
 
         console.log("blur");
         $(this).parent().css("border-color","#bbbbbb")
-        if($(this).val()== ""){
-            $(this).siblings(".title").css("display","block");
-            $(this).siblings(".fa-caret-down").css("display","block");
-            $(this).parent().css("border-color","#FF4747")
-        }
+        $(this).siblings("x-icon").css("display","none");
+        
         
 
     })
