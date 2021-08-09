@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,13 +42,14 @@
 
     <script src="../js/common/toggle.js"></script>
     <script src="../js/common/menu.js"></script>
-   
+
 
     <script src="../js/page/employee/validate.js"></script>
     <script src="../js/page/employee/employee.js"></script>
-    
+
 
 </head>
+
 <body>
     <div class="header">
         <div class="left-header">
@@ -59,43 +61,44 @@
                 <p class="store-name">Nhà hàng Biển Đông</p>
                 <img class="header-icon" src="../content/img/dropdown.png">
             </div>
-            
+
             <div class="right-header">
-                <img class="right-item header-icon bell" src="../content/font/fontawesome-5.15.1//svgs/regular/bell.svg">
+                <img class="right-item header-icon bell"
+                    src="../content/font/fontawesome-5.15.1//svgs/regular/bell.svg">
                 <img class="right-item avatar" src="../content/icon/avatar-default.png">
-                <p class="right-item username" >Đào Thu Hương</p>
+                <p class="right-item username">Đào Thu Hương</p>
                 <img class="right-item header-icon option" src="../content/icon/option.png">
             </div>
         </div>
     </div>
     <div class="wrap">
         <div class="menu">
-            <div class="menu-item active"> 
-                <img src="../content/icon/dashboard.png" >
+            <div class="menu-item active">
+                <img src="../content/icon/dashboard.png">
                 <p>Tổng quan</p>
             </div>
-            <div class="menu-item" > 
+            <div class="menu-item">
                 <img src="../content/icon/report.png">
                 <p>Báo cáo</p>
             </div>
-            <div class="menu-item"> 
+            <div class="menu-item">
                 <img src="../content/icon/dashboard.png">
                 <p>Mua hàng</p>
             </div>
-            <div class="menu-item"> 
+            <div class="menu-item">
                 <img src="../content/icon/dic-employee.png">
                 <p>Danh mục nhân viên</p>
             </div>
-            <div class="menu-item"> 
+            <div class="menu-item">
                 <img src="../content/icon/setting.png">
                 <p>Thiết lập hệ thống</p>
             </div>
-        
+
         </div>
         <div class="content">
             <div class="first-content">
-            <p class="employee-lable">Danh sách nhân viên</p>
-                <button id="btn-add-employee" class="add-employee icon-button" >
+                <p class="employee-lable">Danh sách nhân viên</p>
+                <button id="btn-add-employee" class="add-employee icon-button">
                     <img src="../content/icon/add.png">
                     <p>Thêm nhân viên</p>
                 </button>
@@ -103,12 +106,12 @@
             <div class="filter-bar">
                 <div class="input icon-input">
                     <img class="search-icon" src="../content/icon/search.png">
-                    <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại" >
+                    <input type="text" placeholder="Tìm kiếm theo mã, tên hoặc số điện thoại">
                     <img class="x-icon" src="../content/icon/x.svg">
-                
+
                 </div>
-             
-               
+
+
                 <div class="dropdown">
                     <div class="dropdown-top">
                         <p class="dropdown-label">Tất cả phòng ban</p>
@@ -137,7 +140,7 @@
                             <p>Phòng marketing</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="dropdown">
                     <div class="dropdown-top">
@@ -161,373 +164,434 @@
                             <div class="check-icon"><i class="fas fa-check"></i></div>
                             <p>Nhân viên</p>
                         </div>
-                        
+
                     </div>
-                    
+
                 </div>
                 <button class="second-button refresh-button">
                     <img src="../content/icon/refresh.png">
                 </button>
             </div>
-           <div class="wrap-table">
+            <div class="wrap-table">
 
-           
-            <table class="employee-list" >
-                <thead>
-                <tr>
-                    <th class="employee-id">Mã nhân viên</th>
-                    <th class="fullname">Họ và tên</th>
-                    <th class="gender">Giới tính</th>
-                    <th class="birthday">Ngày sinh</th>
-                    <th class="mobile">Điện thoại</th>
-                    <th class="email">Email</th>
-                    <th class="position">Chức vụ</th>
-                    <th class="department">Phòng ban</th>
-                    <th class="salary">Mức lương cơ bản</th>
-                    <th class="status">Tình trạng công việc</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-                
-               
-                
-            </tbody>
-                
-                
-                
-            </table>
-            <div class="paging-bar">
-                <p>Hiển thị 1-10/1000 nhân viên</p>
-                <div class="paging">
-                    <button class="btn-angle"><i class="fa fa-angle-double-left"></i></button>
-                    <button class="btn-angle"><i class="fa fa-angle-left"></i></button>
-                    <button class="btn-number"  name="page">1</button>
-                    <button class="btn-number" name="page">2</button>
-                    <button class="btn-number" name="page">3</button>
-                    <button class="btn-number" name="page">4</button>
-                    <button class="btn-angle"><i class="fa fa-angle-right"></i></button>
-                    <button class="btn-angle"><i class="fa fa-angle-double-right"></i></button>
+
+                <table class="employee-list">
+                    <thead>
+                        <tr>
+                            <th class="employee-id">Mã nhân viên</th>
+                            <th class="fullname">Họ và tên</th>
+                            <th class="gender">Giới tính</th>
+                            <th class="birthday">Ngày sinh</th>
+                            <th class="mobile">Điện thoại</th>
+                            <th class="email">Email</th>
+                            <th class="position">Chức vụ</th>
+                            <th class="department">Phòng ban</th>
+                            <th class="salary">Mức lương cơ bản</th>
+                            <th class="status">Tình trạng công việc</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+
+
+                    </tbody>
+
+
+
+                </table>
+                <div class="paging-bar">
+                    <p>Hiển thị 1-10/1000 nhân viên</p>
+                    <div class="paging">
+                        <button class="btn-angle"><i class="fa fa-angle-double-left"></i></button>
+                        <button class="btn-angle"><i class="fa fa-angle-left"></i></button>
+                        <button class="btn-number" name="page">1</button>
+                        <button class="btn-number" name="page">2</button>
+                        <button class="btn-number" name="page">3</button>
+                        <button class="btn-number" name="page">4</button>
+                        <button class="btn-angle"><i class="fa fa-angle-right"></i></button>
+                        <button class="btn-angle"><i class="fa fa-angle-double-right"></i></button>
+                    </div>
+                    <p>10 nhân viên/trang</p>
+
                 </div>
-                <p>10 nhân viên/trang</p>
-    
             </div>
-           </div>
-            
-    
-            
+
+
+
+        </div>
+        <!-- The Modal -->
+        <div id="add-employee-modal-id" class="add-employee-modal">
+            <!--Modal content-->
+            <div class="modal-content">
+                <div class="modal-top">
+                    <div class="modal-header">
+                        <p>Thông tin nhân viên</p>
+                        <img id="x" src="../content/icon/x.svg">
+
+                    </div>
+                    <form id="add-employee-form">
+                        <div class="modal-body">
+
+                            <div class="left-body">
+                                <img src="../content/img/default-avatar.jpg">
+                                <p>(Vui lòng chọn ảnh có định</p>
+                                <p> dạng </p>
+                                <p>.jpg .jpeg, .png, .gif )</p>
+                            </div>
+                            <div class="right-body">
+                                <p>A. Thông tin chung</p>
+                                <table class="information">
+                                    <tr>
+                                        <td>
+                                            <p>Mã nhân viên (<span class="star">*</span>)</p>
+                                        </td>
+                                        <td>
+                                            <p>Họ và tên (<span class="star">*</span>)</p>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="input label-input">
+
+                                                <input id="employee-code" class="valid-input" type="text"
+                                                    placeholder="">
+                                                <img class="x-icon" src="../content/icon/x.svg">
+                                                <div class="title">Thông tin này là bắt buộc </div>
+                                                <i class="fas fa-caret-down"></i>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input label-input">
+
+                                                <input id="employee-fullname" class="valid-input" type="text"
+                                                    placeholder="" required>
+                                                <img class="x-icon" src="../content/icon/x.svg">
+                                                <div class="title">Thông tin này là bắt buộc</div>
+                                                <i class="fas fa-caret-down"></i>
+
+                                            </div>
+                                        </td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Ngày sinh</p>
+                                        </td>
+                                        <td>
+                                            <p>Giới tính</p>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><input id="employee-dob" type="date"></td>
+
+                                        <td>
+                                            <div class="combo-box">
+                                                <div class="combo-box-selected">
+
+
+                                                    <input autocomplete="off" class="combo-box-input"
+                                                        id="employee-gender" type="text" placeholder="">
+                                                    <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+
+
+                                                    <div class="wrap-drop-icon"><i
+                                                            class="dropdown-icon fa fa-angle-down"></i></div>
+                                                </div>
+                                                <div class="combo-box-content">
+                                                    <div class="combo-box-item combo-box-active">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Nam</p>
+                                                    </div>
+                                                    <div class="combo-box-item">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Nữ</p>
+                                                    </div>
+                                                    <div class="combo-box-item">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Không xác định</p>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Số CMTND/ Căn cước (<span class="star">*</span>)</p>
+                                        </td>
+                                        <td>
+                                            <p>Ngày cấp</p>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="input label-input">
+
+                                                <input id="employee-identify" class="valid-input" type="text"
+                                                    placeholder="" required>
+                                                <img class="x-icon" src="../content/icon/x.svg">
+                                                <div class="title">Thông tin này là bắt buộc</div>
+                                                <i class="fas fa-caret-down"></i>
+
+                                            </div>
+                                        </td>
+                                        <td><input id="employee-indetify-date" type="date"></td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Nơi cấp
+                                        </td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="input label-input">
+
+                                                <input id="employee-identify-place" type="text" placeholder="">
+                                                <img class="x-icon" src="../content/icon/x.svg">
+
+                                            </div>
+                                        </td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Email (<span class="star">*</span>)</p>
+                                        </td>
+                                        <td>
+                                            <p>Số điện thoại (<span class="star">*</span>)</p>
+                                        </td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="input label-input">
+
+                                                <input id="employee-email" class="valid-input" type="email"
+                                                    placeholder="" required>
+                                                <img class="x-icon" src="../content/icon/x.svg">
+                                                <div class="title">Thông tin này là bắt buộc </div>
+                                                <i class="fas fa-caret-down"></i>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input label-input">
+
+                                                <input id="employee-phone" class="valid-input" type="text"
+                                                    placeholder="">
+                                                <img class="x-icon" src="../content/icon/x.svg">
+                                                <div class="title">Thông tin này là bắt buộc</div>
+                                                <i class="fas fa-caret-down"></i>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                                <p>B.Thông tin công việc</p>
+                                <table class="information">
+                                    <tr>
+                                        <td>
+                                            <p>Vị trí</p>
+                                        </td>
+                                        <td>
+                                            <p>Phòng ban</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="combo-box">
+                                                <div class="combo-box-selected">
+
+
+                                                    <input class="combo-box-input" id="employee-position" type="text"
+                                                        placeholder="">
+                                                    <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+
+
+                                                    <div class="wrap-drop-icon"><i
+                                                            class="dropdown-icon fa fa-angle-down"></i></div>
+                                                </div>
+                                                <div class="combo-box-content">
+                                                    <div class="combo-box-item combo-box-active">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Phòng Đào tạo</p>
+                                                    </div>
+                                                    <div class="combo-box-item">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Phòng Nghiên Cứu</p>
+                                                    </div>
+                                                    <div class="combo-box-item">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Phòng Tài Chính</p>
+                                                    </div>
+                                                    <div class="combo-box-item">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Phòng Nhân sự</p>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="combo-box">
+                                                <div class="combo-box-selected">
+
+
+                                                    <input class="combo-box-input" id="employee-department" type="text"
+                                                        placeholder="">
+                                                    <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+
+
+                                                    <div class="wrap-drop-icon"><i
+                                                            class="dropdown-icon fa fa-angle-down"></i></div>
+                                                </div>
+                                                <div class="combo-box-content">
+
+                                                    <div class="combo-box-item combo-box-active">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Phòng Nhân sự</p>
+                                                    </div>
+                                                    <div class="combo-box-item">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Phòng Đào tạo</p>
+                                                    </div>
+                                                    <div class="combo-box-item">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Phòng Công nghệ</p>
+                                                    </div>
+                                                    <div class="combo-box-item">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Phòng marketing</p>
+                                                    </div>
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Mã số thuế cá nhân</p>
+                                        </td>
+                                        <td>
+                                            <p>Mức lương cơ bản</p>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="input label-input">
+
+                                                <input id="employee-tax-code" type="text" placeholder="">
+                                                <img class="x-icon" src="../content/icon/x.svg">
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input label-input">
+
+                                                <input id="employee-salary" type="text" placeholder="">
+                                                <img class="x-icon" src="../content/icon/x.svg">
+                                                <p class="vnd">(VNĐ)</p>
+
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Ngày gia nhập công ty</p>
+                                        </td>
+                                        <td>
+                                            <p>Tình trạng công việc</p>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><input id="employee-joindate" type="date"></td>
+                                        <td>
+                                            <div class="combo-box">
+                                                <div class="combo-box-selected">
+
+
+                                                    <input class="combo-box-input" id="employee-status" type="text"
+                                                        placeholder="">
+                                                    <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
+
+
+                                                    <div class="wrap-drop-icon"><i
+                                                            class="dropdown-icon fa fa-angle-down"></i></div>
+                                                </div>
+                                                <div class="combo-box-content">
+                                                    <div class="combo-box-item combo-box-active">
+                                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                                        <p>Đang thử việc</p>
+                                                    </div>
+
+                                                </div>
+
+
+
+
+                                            </div>
+                                        </td>
+                                    </tr>
+
+
+                                </table>
+
+
+
+                            </div>
+
+
+
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <div class="right-footer">
+                        <button class="m-btn-cancel" onclick="closePopUp()">Huỷ</button>
+                        <button id="btn-save-employee" class="m-btn-save icon-button" type="button"
+                            form="add-employee-form">
+                            <i class="fa fa-save"></i>
+                            <div>Lưu</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-    <!-- The Modal -->
-    <div id="add-employee-modal-id" class="add-employee-modal">
-        <!--Modal content-->
-        <div class="modal-content">
-            <div class="modal-top">
-            <div class="modal-header">
-                <p>Thông tin nhân viên</p>
-                <img  id="x" src="../content/icon/x.svg" >
-
-            </div>
-            <form id="add-employee-form">
-            <div class="modal-body">
-                
-                <div class="left-body">
-                    <img src="../content/img/default-avatar.jpg">
-                    <p>(Vui lòng chọn ảnh có định</p>
-                    <p> dạng </p>
-                    <p>.jpg .jpeg, .png, .gif )</p>
-                </div>
-                <div class="right-body">
-                    <p>A. Thông tin chung</p>
-                    <table class="information">
-                        <tr>
-                            <td><p>Mã nhân viên (<span class="star">*</span>)</p></td>
-                            <td><p>Họ và tên (<span class="star">*</span>)</p></td>
-                            
-                        </tr>
-                        <tr>
-                            <td><div class="input label-input" >
-        
-                                <input id="employee-code" class="valid-input" type="text"  placeholder="" >
-                                <img class="x-icon" src="../content/icon/x.svg">
-                                <div class="title">Thông tin này là bắt buộc </div>
-                                <i class="fas fa-caret-down"></i>
-                            
-                            </div></td>
-                            <td><div class="input label-input">
-        
-                                <input id="employee-fullname" class="valid-input" type="text" placeholder="" required>
-                                <img class="x-icon" src="../content/icon/x.svg">
-                                <div class="title">Thông tin này là bắt buộc</div>
-    <i class="fas fa-caret-down"></i>
-                            
-                            </div></td>
-
-                            
-                        </tr>
-                        <tr>
-                            <td><p>Ngày sinh</p></td>
-                            <td><p>Giới tính</p></td>
-                            
-                        </tr>
-                        <tr>
-                            <td><input id="employee-dob" type="date"></td>
-                            
-                            <td>
-                                <div class="combo-box">
-                                    <div class="combo-box-selected">
-                                
-                                        
-                                        <input id="employee-gender" type="text" placeholder="" >
-                                        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
-                                            
-                                    
-                                        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
-                                    </div>
-                                    <div class="combo-box-content">
-                                        <div class="combo-box-item combo-box-active">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Nam</p>
-                                        </div>
-                                        <div class="combo-box-item">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Nữ</p>
-                                        </div>
-                                        <div class="combo-box-item">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Không xác định</p>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                            
-                            
-                            
-                                </div>
-                            </td>
-                            
-                            
-                        </tr>
-                        <tr>
-                            <td><p>Số CMTND/ Căn cước (<span class="star">*</span>)</p></td>
-                            <td><p>Ngày cấp</p></td>
-                            
-                        </tr>
-                        <tr>
-                            <td><div class="input label-input">
-        
-                                <input id="employee-identify" class="valid-input" type="text" placeholder="" required >
-                                <img class="x-icon" src="../content/icon/x.svg">
-                                <div class="title">Thông tin này là bắt buộc</div>
-    <i class="fas fa-caret-down"></i>
-                            
-                            </div></td>
-                            <td><input id="employee-indetify-date" type="date"></td>
-
-                            
-                        </tr>
-                        <tr>
-                            <td><p>Nơi cấp</td>
-                            
-                            
-                        </tr>
-                        <tr>
-                            <td><div class="input label-input">
-        
-                                <input id="employee-identify-place" type="text" placeholder="" >
-                                <img class="x-icon" src="../content/icon/x.svg">
-                            
-                            </div></td>
-                            
-                            
-                        </tr>
-                        <tr>
-                            <td><p>Email (<span class="star">*</span>)</p></td>
-                            <td><p>Số điện thoại (<span class="star">*</span>)</p></td>
-                            
-                            
-                        </tr>
-                        <tr>
-                           <td> <div class="input label-input">
-        
-                            <input id="employee-email" class="valid-input" type="email"  placeholder="" required>
-                            <img class="x-icon" src="../content/icon/x.svg">
-                            <div class="title">Thông tin này là bắt buộc </div>
-                            <i class="fas fa-caret-down"></i>
-                        
-                        </div></td>
-                           <td><div class="input label-input">
-        
-                            <input id="employee-phone" class="valid-input" type="text" placeholder="" >
-                            <img class="x-icon" src="../content/icon/x.svg">
-                            <div class="title">Thông tin này là bắt buộc</div>
-                            <i class="fas fa-caret-down"></i>
-                        
-                        </div></td>
-
-                        </tr>
-                    </table>
-                    <p>B.Thông tin công việc</p>
-                    <table class="information">
-                        <tr>
-                            <td><p>Vị trí</p></td>
-                            <td><p>Phòng ban</p></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="combo-box">
-                                    <div class="combo-box-selected">
-                                
-                                    
-                                        <input id="employee-position" type="text" placeholder="" >
-                                        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
-                                    
-                                    
-                                        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
-                                    </div>
-                                    <div class="combo-box-content">
-                                        <div class="combo-box-item combo-box-active">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Phòng Đào tạo</p>
-                                        </div>
-                                        <div class="combo-box-item">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Phòng Nghiên Cứu</p>
-                                        </div>
-                                        <div class="combo-box-item">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Phòng Tài Chính</p>
-                                        </div>
-                                        <div class="combo-box-item">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Phòng Nhân sự</p>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                            
-                            
-                            
-                                </div>
-                            </td>
-                            <td>
-                                <div class="combo-box">
-                                    <div class="combo-box-selected">
-                                
-                                    
-                                        <input id="employee-department" type="text" placeholder="" >
-                                        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
-                                    
-                                    
-                                        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
-                                    </div>
-                                    <div class="combo-box-content">
-                                        
-                                        <div class="combo-box-item combo-box-active">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Phòng Nhân sự</p>
-                                        </div>
-                                        <div class="combo-box-item">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Phòng Đào tạo</p>
-                                        </div>
-                                        <div class="combo-box-item">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Phòng Công nghệ</p>
-                                        </div>
-                                        <div class="combo-box-item">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Phòng marketing</p>
-                                        </div>
-                                    </div>
-                                    
-                            
-                            
-                            
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><p>Mã số thuế cá nhân</p></td>
-                            <td><p>Mức lương cơ bản</p></td>
-
-                        </tr>
-                        <tr>
-                            <td><div class="input label-input">
-        
-                                <input id="employee-tax-code" type="text" placeholder="" >
-                                <img class="x-icon" src="../content/icon/x.svg">
-                            
-                            </div></td>
-                            <td><div class="input label-input">
-        
-                                <input id="employee-salary" type="text" placeholder="" >
-                                <img class="x-icon" src="../content/icon/x.svg">
-                                <p class="vnd">(VNĐ)</p>
-                            
-                            </div></td>
-
-                        </tr>
-                        <tr>
-                            <td><p>Ngày gia nhập công ty</p></td>
-                            <td><p>Tình trạng công việc</p></td>
-
-                        </tr>
-                        <tr>
-                            <td><input id="employee-joindate" type="date"></td>
-                            <td>
-                                <div class="combo-box">
-                                    <div class="combo-box-selected">
-                                
-                                    
-                                        <input id="employee-status" type="text" placeholder="" >
-                                        <!-- <img class="x-icon" src="../content/icon/x.svg"> -->
-                                    
-                                    
-                                        <div class="wrap-drop-icon"><i class="dropdown-icon fa fa-angle-down"></i></div>
-                                    </div>
-                                    <div class="combo-box-content">
-                                        <div class="combo-box-item combo-box-active">
-                                            <div class="check-icon"><i class="fas fa-check"></i></div>
-                                            <p>Đang thử việc</p>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                            
-                            
-                            
-                                </div>
-                            </td>
-                        </tr>
-                        
-
-                    </table>
-                
-                    
-
-                </div>
-          
-                    
-               
-
-            </div>
-            </form>
-            </div>
-            <div class="modal-footer">
-                <div class="right-footer">
-                <button class="m-btn-cancel" onclick="closePopUp()">Huỷ</button>
-                <button id="btn-save-employee" class="m-btn-save icon-button" type="button" form="add-employee-form" >
-                    <i class="fa fa-save"></i>
-                    <div>Lưu</div>
-                </button>
-                </div>
-            </div>
-            
-        </div>
-    </div>
     
- 
     
+
+
+
+
 </body>
+
 </html>

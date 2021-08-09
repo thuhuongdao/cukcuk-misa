@@ -45,7 +45,7 @@
     
   } */
 
-[data-title]:hover::before {
+/* [data-title]:hover::before {
   content: attr(data-title);
   position: absolute;
   bottom: -26px;
@@ -57,4 +57,4 @@
   font-size: 12px;
   font-family: sans-serif;
   white-space: nowrap;
-}
+} */

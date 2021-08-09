@@ -94,6 +94,10 @@ $(document).ready(function(){
 
             if (filters.length > 0){
 
+                comboBoxSelected.css("border-color","#019160");
+                
+                arrowBox.css("border-left-color","#019160");
+
                 comboBoxItems.css("display","none");
                 filters.css("display","flex");
                 
@@ -150,7 +154,7 @@ $(document).ready(function(){
            
            arrow.removeClass("fa-angle-up");
             arrow.addClass("fa-angle-down");
-            comboBoxSelected.css("border-color","#bbbbbb");
+            
         
             comboBoxContent.children().css("display","none");
 

@@ -4,22 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>thu</title>
-    <script src="../lib/jquery-3.6.0.js"></script>
+    <title>Document</title>
 </head>
 <style>
+    .a{
+        display: flex;
+        height: 200px;
+        background-color: aqua;
+    }
+    .b{
+        background-color: beige;
+        flex-basis: 100px;
+    
+    }
+    
+    .c{
+        background-color: brown;
+        flex:  1;
+    }
+    .e{
+        width: 100%;
+        background-color: red;
+        height: 100px;
+    }
     
 </style>
-
 <body>
-    <input type="text">
-    <script>
-        $("input").keyup    (function(e) {
-            console.log(e.which);
-        if (e.which !== 0) {
-            console.log("Character was typed. It was: " + String.fromCharCode(e.which));
-        }
-    });
-    </script>
+    <div class="a">
+        <div class="b">
+            <div class="d"></div>
+        </div>
+
+        <div class="c">
+            <div class="e"></div>
+        </div>
+    </div>
 </body>
 </html>

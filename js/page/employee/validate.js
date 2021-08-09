@@ -12,6 +12,16 @@ $(document).ready(function(){
             $(this).attr("valid", "0");
         }
     })
+    $("#employee-identify").keyup(function(value) {
+        console.log("filter")
+        if(/^\d*$/.test(this.value)){// Allow digits only, using a RegExp
+            this.oldValue = this.value;
+        }else if (this.hasOwnProperty("oldValue")) {
+            this.value = this.oldValue;  
+        }else{
+            this.value = "";
+        }
+      });
 
 })
 function validDate(){

@@ -53,6 +53,10 @@
   {
     background-color: #e5e5e5;
   }
+  .employee-list tr:hover
+  {
+    background-color: #019160;
+  }
   .employee-list th,.employee-list td{
    
     padding: 10px;
@@ -77,6 +81,7 @@
 .employee-list  tbody::-webkit-scrollbar
 {
 width: 7px;
+height: 7px;
 
 
 }
